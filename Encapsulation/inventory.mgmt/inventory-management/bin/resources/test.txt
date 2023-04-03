@@ -1,0 +1,85 @@
+   listName(pList);
+            showQuantity(pList,"Laptop");
+            viewDetails(pList, "Laptop");
+            update(pList, "Laptop", "Description", 1000, 50);
+           addNewProduct(pList);
+            removeProduct(pList, "Laptop");
+
+
+
+                private static void showQuantity(List<Products> pList, String pName) {
+        for (Products prd : pList) {
+
+            if (prd.getProductName().equals(pName)) {
+                System.out.println("\nProduct Name" + " | " + "Product Quantity");
+                System.out.println(prd.getProductName() + "           " + prd.getQuantity());
+            }
+        }
+    }
+
+    private static void listName(List<Products> pList) {
+        for (Products prd : pList) {
+
+            System.out.println(prd.getProductName());
+        }
+    }
+
+    public static void viewDetails(List<Products> pList, String pName) {
+        for (Products prd : pList) {
+            if (prd.getProductName().equals(pName)) {
+                System.out.println("\nProduct Description" + " | " + "Product Cost" + " | " + "Product Quantity");
+                System.out.println(
+                        prd.getProductDesc() + "           " + prd.getCost() + "           " + prd.getQuantity());
+            }
+        }
+
+    }
+
+    public static void update(List<Products> pList, String pName, String pdesc, double pcost, int pqty) {
+        for (Products prd : pList) {
+            if (prd.getProductName().equals(pName)) {
+                prd.setProductDesc(pdesc);
+                prd.setCost(pcost);
+                prd.setQuantity(pqty);
+            }
+            System.out.println(
+                    prd.getProductName() + " " + prd.getProductDesc() + " " + prd.getQuantity() + " " + prd.getCost());
+        }
+    }
+
+    public static void addNewProduct(List<Products> pList) {
+
+        String pName = "newProduct";
+        String pdesc = "New desc";
+        double pcost = 000;
+        int pqty = 0000;
+        Products prd = new Products(pName, pqty, pdesc, pcost);
+        pList.add(prd);
+        for (Products prdI : pList) {
+
+            System.out.println(prdI.getProductName() + " " + prdI.getProductDesc() + " " + prdI.getQuantity() + " "
+                    + prdI.getCost());
+
+        }
+
+    }
+
+    public static void removeProduct(List<Products> pList, String pName) {
+        List<Products> pNewList = new ArrayList<>(pList.size()-1);
+        System.out.println("\n"+"Product Name" + " | " + "Product Description"+ " | " + "Quantity"+ " | "
+        +"Cost");
+        System.out.println("-------------------------------------------------------");
+        for (Products prdI : pList) {
+            
+            if (prdI.getProductName().equals(pName)) {
+
+                continue;
+            }
+           pNewList.add(prdI);
+          
+           System.out.println("\n"+prdI.getProductName() + " | " + prdI.getProductDesc() + " | " + prdI.getQuantity() + " | "
+           + prdI.getCost());
+
+        }
+    
+    }
