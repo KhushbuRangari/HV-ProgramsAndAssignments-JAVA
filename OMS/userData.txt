@@ -1,0 +1,14 @@
+201,Khushbu Rangari,9167442741,pune,kr,pass,not prime,102
+203,Ritika,987776788,Hadapsar,ritu,ritu,not prime,120
+202,Manish Bansor,8167236566,Pune,mn,pass1,not prime,101
+202,Manish Bansor,8167236566,Pune,mn,pass1,not prime,100
+205,Vivaan Singh,9866445667,Pune,viv,pass123,not prime,122
+204,Rahul,897678838,Mumbai,rahul,pass,not prime,124
+201,Khushbu Rangari,9167442741,pune,kr,pass,not prime,129
+201,Khushbu Rangari,9167442741,pune,kr,pass,not prime,130
+201,Khushbu Rangari,9167442741,pune,kr,pass,not prime,131
+203,Ritika,987776788,Hadapsar,ritu,ritu,not prime,135
+203,Ritika,987776788,Hadapsar,ritu,ritu,not prime,136
+203,Ritika,987776788,Hadapsar,ritu,ritu,not prime,137
+203,Ritika,987776788,Hadapsar,ritu,ritu,PRIME,138
+201,Khushbu Rangari,9167442741,pune,kr,pass,not prime,139
